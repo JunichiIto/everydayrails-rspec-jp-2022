@@ -1,0 +1,30 @@
+name: Ruby
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@168d6a54b412713c0ed60998a78093a270ca8d84
+        with:
+          ruby-version: 3.1
+          bundler-cache: true
+
+      - name: Setup test database
+        run: bin/rails db:schema:load
+
+      - name: Compile assets
+        run: bin/rails assets:precompile
+
+      - name: Run tests
+        run: bundle exec rspec
