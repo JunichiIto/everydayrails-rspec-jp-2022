@@ -1,0 +1,5 @@
+<h1>Search results for <%= params[:term] %></h1>
+
+<%= render @notes %>
+
+<%= link_to "Back to #{@project.name}", @project, class: "btn btn-primary" %>

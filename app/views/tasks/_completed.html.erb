@@ -1,0 +1,8 @@
+<%= turbo_frame_tag task do %>
+  <%= form_with model: task, url: [:toggle, task.project, task] do |f| %>
+    <label id="<%= dom_id(task) %>" class="<%= task.completed? ? 'completed' : '' %>">
+      <%= f.check_box :completed, onchange: "this.form.requestSubmit()" %>
+      <%= task.name %>
+    </label>
+  <% end %>
+<% end %>

@@ -1,0 +1,28 @@
+<%= form_with(model: [note.project, note], multiple: true) do |form| %>
+  <% if note.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(note.errors.count, "error") %> prohibited this note from being saved:</h2>
+
+      <ul>
+        <% note.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="mb-3">
+    <%= form.label :message, class: "form-label" %>
+    <%= form.text_area :message, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :attachment, class: "form-label" %>
+    <%= form.file_field :attachment, class: "form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: "btn btn-primary" %>
+    <%= link_to "Cancel", note.project, class: "btn btn-light", data: { turbo_method: :get, turbo_confirm: "Are you sure?" } %>
+  </div>
+<% end %>

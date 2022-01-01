@@ -1,0 +1,34 @@
+<%= form_with(model: project) do |form| %>
+  <% if project.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(project.errors.count, "error") %> prohibited this project from being saved:</h2>
+
+      <ul>
+        <% project.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="mb-3">
+    <%= form.label :name, class: "form-label" %>
+    <%= form.text_field :name, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :description, class: "form-label" %>
+    <%= form.text_area :description, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :due_on, class: "form-label" %>
+    <%= form.date_field :due_on, class: "form-control form-control-date" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: "btn btn-primary" %>
+    <% cancel_path = (project.persisted? ? project_path(project) : projects_path) %>
+    <%= link_to "Cancel", cancel_path, class: "btn btn-light", data: { turbo_method: :get, turbo_confirm: "Are you sure?" } %>
+  </div>
+<% end %>

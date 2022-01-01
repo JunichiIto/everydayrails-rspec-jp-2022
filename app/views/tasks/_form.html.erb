@@ -1,0 +1,28 @@
+<%= form_with(model: [task.project, task]) do |form| %>
+  <% if task.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(task.errors.count, "error") %> prohibited this task from being saved:</h2>
+
+      <ul>
+        <% task.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="mb-3">
+    <%= form.label :name, class: "form-label" %>
+    <%= form.text_field :name, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.check_box :completed %>
+    <%= form.label :completed, class: "form-label" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: "btn btn-primary" %>
+    <%= link_to "Cancel", task.project, class: "btn btn-light", data: { turbo_method: :get, turbo_confirm: "Are you sure?" } %>
+  </div>
+<% end %>
