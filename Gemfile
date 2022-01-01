@@ -87,8 +87,8 @@ group :test do
   gem 'launchy' # add in chapter 6
   gem 'shoulda-matchers' # add in chapter 9
   # TODO: waiting for release https://github.com/vcr/vcr/pull/907
-  gem 'vcr', github: 'vcr/vcr'
-  gem 'webmock'
+  gem 'vcr', github: 'vcr/vcr' # add in chapter 10
+  gem 'webmock' # add in chapter 10
 end
 
 gem 'devise'
