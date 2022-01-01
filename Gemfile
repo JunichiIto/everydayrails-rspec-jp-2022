@@ -61,7 +61,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ], require: false
 
   gem 'rspec-rails' # add in chapter 2
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails' # add in chapter 4
 end
 
 group :development do
