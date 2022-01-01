@@ -4,6 +4,17 @@
     <i class="bi bi-pencil-fill" aria-hidden="true"></i>
     Edit
   <% end %>
+  <% if project.completed? %>
+    <span class="badge bg-success">Completed</span>
+  <% else %>
+    <%= button_to complete_project_path(project),
+        method: :patch,
+        form: { style: "display:inline-block;" },
+        class: "btn btn-light btn-sm btn-inline" do %>
+      <span class="bi bi-check-lg" aria-hidden="true"></span>
+      Complete
+    <% end %>
+  <% end %>
 </h1>
 
 <div class="project-description">

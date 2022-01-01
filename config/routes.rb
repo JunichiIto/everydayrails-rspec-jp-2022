@@ -13,6 +13,9 @@ Rails.application.routes.draw do
         patch :toggle
       end
     end
+    member do
+      patch :complete
+    end
   end
 
   namespace :api do
