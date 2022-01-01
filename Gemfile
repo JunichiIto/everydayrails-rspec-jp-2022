@@ -84,7 +84,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 
-  gem 'launchy'
+  gem 'launchy' # add in chapter 6
   gem 'shoulda-matchers'
   # TODO: waiting for release https://github.com/vcr/vcr/pull/907
   gem 'vcr', github: 'vcr/vcr'
