@@ -14,7 +14,6 @@ class ProjectsTest < ApplicationSystemTestCase
     visit projects_url
     click_on "New project"
 
-    check "Completed" if @project.completed
     fill_in "Description", with: @project.description
     fill_in "Due on", with: @project.due_on
     fill_in "Name", with: @project.name
@@ -28,7 +27,6 @@ class ProjectsTest < ApplicationSystemTestCase
     visit project_url(@project)
     click_on "Edit this project", match: :first
 
-    check "Completed" if @project.completed
     fill_in "Description", with: @project.description
     fill_in "Due on", with: @project.due_on
     fill_in "Name", with: @project.name

@@ -4,10 +4,8 @@ one:
   name: MyString
   description: MyText
   due_on: 2021-12-29
-  completed: false
 
 two:
   name: MyString
   description: MyText
   due_on: 2021-12-29
-  completed: false
