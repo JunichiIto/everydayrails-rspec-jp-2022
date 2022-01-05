@@ -1,11 +1,4 @@
 GIT
-  remote: https://github.com/deivid-rodriguez/thor.git
-  revision: 98dbec75e4237fb8fb1b4190fd91cc22ad65068f
-  branch: support_latest_did_you_mean
-  specs:
-    thor (1.1.0)
-
-GIT
   remote: https://github.com/rails/rails.git
   revision: 6a0f6c4d70b198ef36c2d512314248dabec6fbbc
   branch: 7-0-stable
@@ -260,6 +253,7 @@ GEM
     stimulus-rails (1.0.2)
       railties (>= 6.0.0)
     strscan (3.0.1)
+    thor (1.2.1)
     timeout (0.2.0)
     turbo-rails (1.0.0)
       actionpack (>= 6.0.0)
@@ -316,7 +310,6 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
-  thor!
   turbo-rails
   tzinfo-data
   vcr!
