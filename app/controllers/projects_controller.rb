@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
   before_action :set_project, only: %i[ show edit update destroy ]
-  before_action :project_owner?, except: %i[index new create]
+  before_action :project_owner?, except: %i[ index new create ]
 
   # GET /projects or /projects.json
   def index
