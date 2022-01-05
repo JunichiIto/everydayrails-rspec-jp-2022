@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/rails/rails.git
-  revision: 6a0f6c4d70b198ef36c2d512314248dabec6fbbc
+  revision: 46c056628a4a154af8fec7f48cbf633b6aac4316
   branch: 7-0-stable
   specs:
     actioncable (7.0.0)
@@ -100,7 +100,7 @@ GIT
 
 GIT
   remote: https://github.com/vcr/vcr.git
-  revision: 717747a7c172319a062231eacaea2114873a4ca0
+  revision: 90ea3ea462384dd5335167a27fe47404623036d4
   specs:
     vcr (6.0.0)
 
@@ -143,7 +143,7 @@ GEM
     faker (2.19.0)
       i18n (>= 1.6, < 2)
     ffi (1.15.4)
-    geocoder (1.7.0)
+    geocoder (1.7.2)
     globalid (1.0.0)
       activesupport (>= 5.0)
     hashdiff (1.0.1)
@@ -152,7 +152,7 @@ GEM
     image_processing (1.12.1)
       mini_magick (>= 4.9.5, < 5)
       ruby-vips (>= 2.0.17, < 3)
-    io-console (0.5.10)
+    io-console (0.5.11)
     io-wait (0.2.1)
     irb (1.4.1)
       reline (>= 0.3.0)
@@ -210,7 +210,7 @@ GEM
       loofah (~> 2.3)
     rake (13.0.6)
     regexp_parser (2.2.0)
-    reline (0.3.0)
+    reline (0.3.1)
       io-console (~> 0.5)
     responders (3.0.1)
       actionpack (>= 5.0)
@@ -280,7 +280,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.5.2)
+    zeitwerk (2.5.3)
 
 PLATFORMS
   ruby
@@ -316,9 +316,6 @@ DEPENDENCIES
   web-console
   webdrivers
   webmock
-
-RUBY VERSION
-   ruby 3.1.0p0
 
 BUNDLED WITH
    2.3.3
