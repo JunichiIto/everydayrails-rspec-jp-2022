@@ -20,7 +20,7 @@ RSpec.describe Note, type: :model do
   end
 
   it 'has one attached attachment' do
-    note = FactoryBot.create :note, :with_attachment
+    note = FactoryBot.create(:note, :with_attachment)
     expect(note.attachment).to be_attached
   end
 
