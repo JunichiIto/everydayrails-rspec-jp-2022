@@ -10,14 +10,17 @@ jobs:
   test:
 
     runs-on: ubuntu-latest
-
+    strategy:
+      matrix:
+        ruby-version: ['2.7', '3.0', '3.1']
+        
     steps:
       - uses: actions/checkout@v2
 
       - name: Set up Ruby
         uses: ruby/setup-ruby@168d6a54b412713c0ed60998a78093a270ca8d84
         with:
-          ruby-version: 3.1
+          ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true
 
       - name: Setup test database
