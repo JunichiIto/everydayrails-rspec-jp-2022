@@ -7,10 +7,6 @@ ruby "3.1.0"
 # TODO: waiting for new release which fully supports Ruby 3.1
 gem "rails", github: "rails/rails", branch: "7-0-stable"
 
-# TODO: waiting for new release which fully supports Ruby 3.1
-# https://github.com/rails/thor/pull/761
-gem 'thor', github: 'deivid-rodriguez/thor', branch: 'support_latest_did_you_mean'
-
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
