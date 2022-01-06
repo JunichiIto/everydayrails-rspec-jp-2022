@@ -40,3 +40,6 @@
 /node_modules
 
 .ruby-version
+
+/public/fonts/*
+!/public/fonts/.keep
