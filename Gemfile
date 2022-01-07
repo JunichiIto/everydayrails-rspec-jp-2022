@@ -2,8 +2,7 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-# TODO: waiting for new release which fully supports Ruby 3.1
-gem "rails", github: "rails/rails", branch: "7-0-stable"
+gem "rails", "7.0.1"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
