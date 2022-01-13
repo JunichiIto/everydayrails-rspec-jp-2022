@@ -1,0 +1,16 @@
+<h1>
+  Projects
+
+  <%= link_to new_project_path, class: "btn btn-primary" do %>
+    <span class="bi bi-plus-lg" aria-hidden="true"></span>
+    New Project
+  <% end %>
+</h1>
+
+
+<% @projects.each do |project| %>
+  <h2><%= link_to project.name, project %></h2>
+  <p>
+    <%= project.description %>
+  </p>
+<% end %>

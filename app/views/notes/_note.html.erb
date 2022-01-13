@@ -1,0 +1,30 @@
+<div class="note">
+  <div class="note-message">
+    <%= simple_format note.message %>
+  </div>
+
+  <% if note.attachment.attached? %>
+    <div class="note-details">
+      <span class="bi bi-file-earmark-fill"></span>
+      <%= link_to note.attachment.filename, note.attachment %>
+      (<%= note.attachment.content_type %>,
+      <%= number_to_human_size(note.attachment.byte_size) %>)
+    </div>
+  <% end %>
+
+  <h4 class="note-info">
+    <%= note.user_name %>,
+    <%= full_date(note.created_at) %>
+    <%= link_to edit_project_note_path(note.project, note),
+                class: "btn btn-light btn-sm btn-inline" do %>
+      <span class="bi bi-pencil-fill" aria-hidden="true"></span>
+      Edit
+    <% end %>
+    <%= link_to [note.project, note],
+                data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' },
+                class: "btn btn-light btn-sm" do %>
+      <span class="bi bi-trash" aria-hidden="true"></span>
+      Delete
+    <% end %>
+  </h4>
+</div>

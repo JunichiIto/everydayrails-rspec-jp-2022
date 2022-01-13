@@ -1,0 +1,82 @@
+<h1 class="heading">
+  <%= project.name %>
+  <%= link_to edit_project_path(project), class: "btn btn-light btn-sm btn-inline" do %>
+    <span class="bi bi-pencil-fill" aria-hidden="true"></span>
+    Edit
+  <% end %>
+  <% if project.completed? %>
+    <span class="badge bg-success">Completed</span>
+  <% else %>
+    <%= button_to complete_project_path(project),
+        method: :patch,
+        form: { style: "display:inline-block;" },
+        class: "btn btn-light btn-sm btn-inline" do %>
+      <span class="bi bi-check-lg" aria-hidden="true"></span>
+      Complete
+    <% end %>
+  <% end %>
+</h1>
+
+<div class="project-description">
+  <%= simple_format project.description %>
+</div>
+
+<p>
+  Owner:
+  <%= @project.owner.name %>
+</p>
+
+<p>
+  Due: <%= full_date(project.due_on) %>
+</p>
+
+<hr class="divider">
+
+<h2 class="heading">
+  Tasks
+  <%= link_to new_project_task_path(@project), class: "btn btn-light btn-sm btn-inline" do %>
+    <span class="bi bi-plus-lg" aria-hidden="true"></span>
+    Add Task
+  <% end %>
+</h2>
+
+<table class="table">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th class="task-actions">Actions</th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <%= render @project.tasks %>
+  </tbody>
+</table>
+
+<hr class="divider">
+
+<div class="row">
+  <div class="col-xs-12 col-md-8">
+    <h2 class="heading" style="padding: 0 !important; margin: 0 !important">
+      Notes
+      <%= link_to new_project_note_path(@project), class: "btn btn-light btn-sm btn-inline" do %>
+        <span class="bi bi-plus-lg" aria-hidden="true"></span>
+        Add Note
+      <% end %>
+    </h2>
+  </div>
+
+  <div class="col-xs-12 col-md-4" style="text-align: right;">
+    <%= form_with url: project_notes_path(@project),
+                  method: :get, class: "form-inline" do |f| %>
+      <div class="input-group mb-3">
+        <%= f.search_field :term, class: "form-control", id: :term, placeholder: "Search Notes" %>
+        <%= button_tag class: "btn btn-outline-secondary" do %>
+          <i class="bi bi-search form-control-feedback"></i>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<%= render @project.notes %>

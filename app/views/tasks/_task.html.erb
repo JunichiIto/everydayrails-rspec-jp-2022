@@ -1,0 +1,18 @@
+<tr class="task">
+  <td>
+    <%= render 'tasks/completed', task: task %>
+  </td>
+  <td class="task-actions">
+    <%= link_to edit_project_task_path(task.project, task),
+                class: "btn btn-sm btn-light" do %>
+      <span class="bi bi-pencil-fill" aria-hidden="true"></span>
+      Edit
+    <% end %>
+    <%= link_to [task.project, task],
+                data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' },
+                class: "btn btn-light btn-sm" do %>
+      <span class="bi bi-trash" aria-hidden="true"></span>
+      Delete
+    <% end %>
+  </td>
+</tr>
