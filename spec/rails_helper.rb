@@ -69,7 +69,7 @@ RSpec.configure do |config|
 
   # Clean up file uploads when test suite is finished
   config.after(:suite) do
-    FileUtils.rm_rf("#{Rails.root}/tmp/storage")
+    FileUtils.rm_rf(ActiveStorage::Blob.service.root)
   end
 end
 
