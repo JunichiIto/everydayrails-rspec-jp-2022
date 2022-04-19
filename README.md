@@ -12,7 +12,7 @@ repository is the official fork for the 2022 Japanese edition.
 
 2022年更新の日本語版より、 [原著のソースコード](https://github.com/everydayrails/everydayrails-rspec-2017) をフォークし、日本語版独自にメンテナンスしていくことになりました。
 
-<img width="323" alt="Screen Shot 2022-01-01 at 9 53 31" src="https://user-images.githubusercontent.com/1148320/147841846-e5cfdd00-1709-49cf-8f79-4fb68b67cc1f.png">
+<img width="323" alt="cover image" src="https://user-images.githubusercontent.com/1148320/149681452-f3308367-831d-44dc-8c0b-cd9ba795cc6e.jpg">
 
 このリポジトリでは既存のアプリケーションに対して、少しずつテストを追加していく過程を説明します。最初はまったくテストのないコードベースから始まり、
 モデルスペック、コントローラスペック、システムスペック、リクエストスペックと順に進みます。
