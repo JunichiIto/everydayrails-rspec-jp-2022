@@ -2,7 +2,7 @@ source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "7.0.1"
+gem "rails", "7.0.2.3"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -76,8 +76,7 @@ group :test do
 
   gem 'launchy'
   gem 'shoulda-matchers'
-  # TODO: waiting for release https://github.com/vcr/vcr/pull/907
-  gem 'vcr', github: 'vcr/vcr'
+  gem 'vcr'
   gem 'webmock'
 end
 
