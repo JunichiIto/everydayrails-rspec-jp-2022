@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  devise_for :users, controllers: { registrations: 'registrations', sessions: 'sessions' }
+  devise_for :users
 
   authenticated :user do
     root 'projects#index', as: :authenticated_root
