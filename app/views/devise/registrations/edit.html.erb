@@ -59,6 +59,6 @@
 
 <h3 class="mt-3">Cancel my account</h3>
 
-<p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class: "btn btn-secondary" %></p>
+<div>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class: "btn btn-secondary" %></div>
 
 <%= link_to "Back", :back, class: "btn btn-light" %>
