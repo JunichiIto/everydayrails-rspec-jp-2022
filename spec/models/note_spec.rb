@@ -19,6 +19,11 @@ RSpec.describe Note, type: :model do
     expect(note.errors[:message]).to include("can't be blank")
   end
 
+  it 'has one attached attachment' do
+    note = FactoryBot.create(:note, :with_attachment)
+    expect(note.attachment).to be_attached
+  end
+
   describe "search message for a term" do
     let!(:note1) {
       FactoryBot.create(:note,
