@@ -73,8 +73,8 @@ group :test do
 
   gem 'launchy' # add in chapter 6
   gem 'shoulda-matchers' # add in chapter 9
-  gem 'vcr' # add in chapter 10
-  gem 'webmock' # add in chapter 10
+  gem 'vcr'
+  gem 'webmock'
 end
 
 gem 'devise'
