@@ -1,0 +1,15 @@
+current directory: /home/vagrant/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+/home/vagrant/.anyenv/envs/rbenv/versions/3.1.2/bin/ruby -I /home/vagrant/.anyenv/envs/rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231120-44620-monuq6.rb extconf.rb
+creating Makefile
+
+current directory: /home/vagrant/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= clean
+
+current directory: /home/vagrant/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\=
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/vagrant/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.1.0/gems/websocket-driver-0.7.6/ext/websocket-driver
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20231120-44620-z7yu96
