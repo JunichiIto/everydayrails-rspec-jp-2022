@@ -1,0 +1,19 @@
+current directory: /home/vagrant/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.1.0/gems/io-console-0.6.0/ext/io/console
+/home/vagrant/.anyenv/envs/rbenv/versions/3.1.2/bin/ruby -I /home/vagrant/.anyenv/envs/rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231120-25688-wl5wfp.rb extconf.rb
+checking for termios.h... yes
+checking for cfmakeraw() in termios.h... yes
+checking for sys/ioctl.h... yes
+checking for HAVE_RUBY_FIBER_SCHEDULER_H... yes
+creating Makefile
+
+current directory: /home/vagrant/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.1.0/gems/io-console-0.6.0/ext/io/console
+make DESTDIR\= clean
+
+current directory: /home/vagrant/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.1.0/gems/io-console-0.6.0/ext/io/console
+make DESTDIR\=
+compiling console.c
+linking shared-object io/console.so
+
+current directory: /home/vagrant/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.1.0/gems/io-console-0.6.0/ext/io/console
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 console.so ./.gem.20231120-25688-9xyp15/io

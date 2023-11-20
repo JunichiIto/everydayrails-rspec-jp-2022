@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/home/vagrant/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.1.0/gems/sqlite3-1.6.3/ports/x86_64-linux-gnu/sqlite3/3.42.0
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: SQLite
+Description: SQL database engine
+Version: 3.42.0
+Libs: -L${libdir} -lsqlite3
+Libs.private: -lz -lm -ldl -lpthread 
+Cflags: -I${includedir}

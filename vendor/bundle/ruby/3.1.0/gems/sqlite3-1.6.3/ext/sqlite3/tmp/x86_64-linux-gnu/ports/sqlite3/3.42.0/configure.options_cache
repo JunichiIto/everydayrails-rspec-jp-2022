@@ -1,0 +1,1 @@
+["--host=x86_64-linux-gnu", "--enable-static", "--disable-shared", "--enable-shared=no", "--enable-static=yes", "CC=gcc", "CFLAGS=-fPIC -O2 -fvisibility=hidden", "--prefix=/home/vagrant/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.1.0/gems/sqlite3-1.6.3/ports/x86_64-linux-gnu/sqlite3/3.42.0"]
