@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "姓、名、メール、パスワードがあれば有効な状態であること"
+  it "名がなければ無効な状態であること"
+  it "姓がなければ無効な状態であること"
+  it "メールアドレスがなければ無効な状態であること"
+  it "重複したメールアドレスなら無効な状態であること"
+  it "ユーザーのフルネームを⽂字列として返すこと"
 end
