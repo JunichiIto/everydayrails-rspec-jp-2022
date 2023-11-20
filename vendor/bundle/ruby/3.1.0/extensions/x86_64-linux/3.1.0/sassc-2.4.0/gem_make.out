@@ -1,5 +1,5 @@
 current directory: /home/vagrant/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.1.0/gems/sassc-2.4.0/ext
-/home/vagrant/.anyenv/envs/rbenv/versions/3.1.2/bin/ruby -I /home/vagrant/.anyenv/envs/rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231120-44620-2fm7s3.rb extconf.rb
+/home/vagrant/.anyenv/envs/rbenv/versions/3.1.2/bin/ruby -I /home/vagrant/.anyenv/envs/rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231120-51905-vo4od5.rb extconf.rb --disable-march-tune-native
 creating Makefile
 
 current directory: /home/vagrant/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.1.0/gems/sassc-2.4.0/ext
@@ -77,4 +77,4 @@ linking shared-object sassc/libsass.so
 
 current directory: /home/vagrant/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.1.0/gems/sassc-2.4.0/ext
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 libsass.so ./.gem.20231120-44620-zfrvoo/sassc
+/usr/bin/install -c -m 0755 libsass.so ./.gem.20231120-51905-ktqeyo/sassc

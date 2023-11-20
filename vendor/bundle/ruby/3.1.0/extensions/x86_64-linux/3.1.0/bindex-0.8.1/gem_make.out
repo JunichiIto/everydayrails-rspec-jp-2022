@@ -1,5 +1,5 @@
 current directory: /home/vagrant/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
-/home/vagrant/.anyenv/envs/rbenv/versions/3.1.2/bin/ruby -I /home/vagrant/.anyenv/envs/rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231120-44620-tpwtek.rb extconf.rb
+/home/vagrant/.anyenv/envs/rbenv/versions/3.1.2/bin/ruby -I /home/vagrant/.anyenv/envs/rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20231120-52354-y89uv0.rb extconf.rb
 creating Makefile
 
 current directory: /home/vagrant/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
@@ -12,4 +12,4 @@ linking shared-object skiptrace/internal/cruby.so
 
 current directory: /home/vagrant/everydayrails-rspec-jp-2022/vendor/bundle/ruby/3.1.0/gems/bindex-0.8.1/ext/skiptrace
 make DESTDIR\= install
-/usr/bin/install -c -m 0755 cruby.so ./.gem.20231120-44620-r31vcb/skiptrace/internal
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20231120-52354-yotq3v/skiptrace/internal

@@ -1,0 +1,12 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/rfcs
+/spec/reports/
+/tmp/
+/Gemfile.lock
+/benchmarks/Gemfile*
+/benchmarks/parser.yml
