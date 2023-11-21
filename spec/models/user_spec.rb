@@ -17,6 +17,15 @@ RSpec.describe User, type: :model do
     expect(user.errors[:first_name]).to include("can't be blank")
   end
 
+  it "ユーザーのフルネームを文字列で返す" do
+    user = User.new(
+      first_name: "John",
+      last_name: "Doe",
+      email: "johndoe@example.com",
+    )
+    expect(user.name).to eq "John Doe"
+  end
+
   it "姓がなければ無効な状態であること" do
     user = User.new(last_name: nil)
     user.valid?
